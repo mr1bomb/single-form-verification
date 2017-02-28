@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>123</title>
+    <meta charset="utf-8">
+    <link href="css/1.css" rel="stylesheet">
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        body{
+            width:100%;
+        }
+        #box{
+            height: 100px;
+            margin: 20%;
+            text-align: center;
+
+        }
+        label{
+            font-size: 24px;
+        }
+        #text{
+            width:300px;
+            height: 50px;
+            border:1px solid #2f3038;
+            border-radius: 5px;
+            padding: 0 5px;
+            font-size: 24px;
+            outline:0;/*在chrome/FF/safari浏览器中，input在focus下默认会有outline属性。所以设置了border-radius以后，最好把outline设为0。*/
+        }
+        #button{
+            width: 70px;
+            height: 50px;
+            border-radius: 5px;
+            background-color: #2e6da4;
+            font-size: 24px;
+            color: #ffffff;
+            outline:0;
+
+        }
+        p{
+            font-size: 12px;
+            color: #3c3c3c;
+        }
+
+    </style>
+</head>
+<body>
+<div id="box">
+    <label for="text">名称</label>
+    <input type="text" id="text">
+    <input type="button" id="button" value="验证">
+    <p>必填，长度为4~16个字符</p>
+</div>
+<script type="text/javascript" src="js/main.js">
+</script>
+</body>
+</html>
